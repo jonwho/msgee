@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/jonwho/msgee#readme",
   "dependencies": {
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "gulp": "^3.8.11",
+    "nodemon": "^1.3.7"
   }
 }
