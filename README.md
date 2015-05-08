@@ -4,3 +4,8 @@
 ```
 gulp
 ```
+
+## To test Procfile before pushing to Heroku
+```
+foreman start
+```
