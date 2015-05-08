@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jonwho/msgee/issues"
   },
-  "homepage": "https://github.com/jonwho/msgee#readme"
+  "homepage": "https://github.com/jonwho/msgee#readme",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
 }
