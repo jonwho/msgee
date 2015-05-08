@@ -1,6 +1,6 @@
 # Doing some thangs
 
-## Start node locally with foreman
+## Start node server to localhost:5000
 ```
-foreman start web
+gulp
 ```
