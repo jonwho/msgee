@@ -1,5 +1,10 @@
 # Doing some thangs
 
+## Don't forget to install npm dependencies
+```
+npm install
+```
+
 ## Start node server to localhost:5000
 ```
 gulp
