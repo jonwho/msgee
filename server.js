@@ -10,16 +10,20 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 
 // Serve static assets
+// client has precedence over server because served first
+// 
 app.use(express.static(__dirname + '/client'));
+app.use(express.static(__dirname + '/server'));
 
 // Set up view engine
-app.set('views', __dirname + '/client/views');
+//app.set('views', __dirname + '/client/views');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
-app.get('/', function(req, res) {
-  res.render('index');
-});
+// app.use(function (req, res, next) {
+//   var err = new Error('Not Found');
+//   err.status = 404;
+// });
 
 // Start server
 app.listen(app.get('port'), function() {

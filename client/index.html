@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- Material Design -->
+  <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+
+  <!-- MFB directive -->
+  <link rel="stylesheet" href="/bower_components/ng-mfb/mfb/dist/mfb.css">
+
+  <!-- Ionic Icons -->
+  <link rel="stylesheet" href="/bower_components/ionicons/css/ionicons.css">
+
+  <!-- Custom Material Design -->
+  <link rel="stylesheet" href="/styles/custom-md.css">
+  <title>msgee</title>
+</head>
+<body ng-app="msgee">
+  <!-- Dynamic Views -->
+  <!--<div ui-view></div>-->
+
+  <!-- Single column (whole app) -->
+  <div layout="column" layout-align="center center"> 
+    <!-- <div layout="row" layout-sm="column" layout-align="center center"> -->
+      <md-card>
+        <img src="http://weknowmemes.com/wp-content/uploads/2011/10/dat-ass-link.png" alt="test img">
+        <md-card-content class="summary">
+          <h2 class="md-title">I'm a title</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac turpis diam. Ut pellentesque aliquet dolor, a fermentum sapien vestibulum sed. Sed bibendum egestas dignissim. Donec convallis arcu a sapien tempor mollis. Phasellus non commodo dolor. Aenean consequat arcu eget commodo convallis. Suspendisse fermentum iaculis augue.
+          </p>
+          <div class="md-actions" layout="row" layout-align="end center">
+            <md-button>Share</md-button>
+            <md-button>Reply</md-button>
+          </div>
+        </md-card-content>
+      </md-card>
+      <md-card>
+        <img src="http://weknowmemes.com/wp-content/uploads/2011/10/dat-ass-link.png" alt="test img">
+        <md-card-content class="summary">
+          <h2 class="md-title">I'm a title</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac turpis diam. Ut pellentesque aliquet dolor, a fermentum sapien vestibulum sed. Sed bibendum egestas dignissim. Donec convallis arcu a sapien tempor mollis. Phasellus non commodo dolor. Aenean consequat arcu eget commodo convallis. Suspendisse fermentum iaculis augue.
+          </p>
+          <div class="md-actions" layout="row" layout-align="end center">
+            <md-button>Share</md-button>
+            <md-button>Reply</md-button>
+          </div>
+        </md-card-content>
+      </md-card>
+    <!-- </div> -->
+    <nav mfb-menu position="br" effect="zoomin" label="hover here" 
+         active-icon="ion-edit" resting-icon="ion-plus-round"
+         toggling-method="click">
+      <button mfb-button icon="ion-paper-airplane" label="menu item"></button>
+      <button mfb-button icon="ion-chatbubble-working" label="another item"></button>
+    </nav>
+  </div>
+
+  <!-- Angular -->
+  <script src="/bower_components/angular/angular.js"></script>
+  <script src="/bower_components/angular-aria/angular-aria.js"></script>
+  <script src="/bower_components/angular-animate/angular-animate.js"></script>
+  <script src="/bower_components/angular-material/angular-material.js"></script> 
+  
+  <!-- Angular ui-router // include after angular -->
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+  <!-- MFB directive -->
+  <script src="/bower_components/ng-mfb/src/mfb-directive.js"></script>
+  
+  <!-- Firebase -->
+  <script src="/bower_components/firebase/firebase.js"></script>
+  <!-- AngularFire // need this for the actual Angular APIs -->
+  <script src="/bower_components/angularfire/dist/angularfire.js"></script>
+
+  <!-- Local development -->
+  <script src="/scripts/app.js"></script>
+</body>
+</html>

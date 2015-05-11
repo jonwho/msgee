@@ -1,26 +1,30 @@
 'use strict';
 
 // Dependencies
-angular
+var app = angular
   .module('msgee', [
     'ngAria',
     'ngMaterial',
     'ui.router',
-    'firebase'
+    'firebase',
+    'ng-mfb'
 ]);
 
 // Routing
-angular
-  .config(function($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/home');
+app.config(function($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.otherwise('/');
 
     $stateProvider
+      .state('/', {
+        url: '/',
+        templateUrl: '../index.html'
+      })
       .state('home', {
         url: '/home',
-	templateUrl: 'views/home.html'
+        templateUrl: '../views/home.html'
       })
       .state('posts', {
         url: '/posts',
-	templateUrl: 'views/posts.html'
+        templateUrl: '../views/posts.html'
       });
 });

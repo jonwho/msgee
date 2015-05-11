@@ -1,0 +1,7 @@
+/*
+ * Make customized versions of Material Design to use in app.
+ */
+md-card {
+  max-width: 50%;
+  max-height: 50%;
+}

@@ -14,3 +14,5 @@ gulp
 ```
 foreman start
 ```
+
+## Install bower components in the clients directory
